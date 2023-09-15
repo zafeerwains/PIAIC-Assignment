@@ -125,15 +125,26 @@ const arrayOfCities: string[] = ["karachi", "Lahore", "Faisalabad", "Sailkot"]
 for (const city of arrayOfCities) console.log(city);
 
 // 21=>They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
-let myProfile:{name:string,dob:number,city:string}={
-name:"M.Zafeer"
-,dob:21,
-city:"FSD"
+let myProfile: { name: string, dob: number, city: string } = {
+    name: "M.Zafeer"
+    , dob: 21,
+    city: "FSD"
 }
 console.log(myProfile);
 
 // 22=>Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
-const city:string=arrayOfCities[6]//accsessing the element not exists
-const city1:string=arrayOfCities[2]//accsessing the element exists
+const city: string = arrayOfCities[6]//accsessing the element not exists
+const city1: string = arrayOfCities[2]//accsessing the element exists
 
 // 23=>Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+if (arrayOfCities[2] === "Faisalabad") console.log(true);
+if (arrayOfCities[1] === "Faisalabad") console.log(false);
+if (arrayOfNames[2] === "Honda") console.log(false);
+if (arrayOfNames[2] === "city") console.log(true);
+if (arrayOfCities[4] === "Faisalabad") console.log(false);
+if (arrayOfCities[0] === "Lahore") console.log(false);
+if (arrayOfCities[2] === "Lahore") console.log(false);
+if (arrayOfCities[3] === "Sailkot") console.log(true);
+if (arrayOfCities[1] === "Lahore") console.log(true);
+
+// 24=>More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following
