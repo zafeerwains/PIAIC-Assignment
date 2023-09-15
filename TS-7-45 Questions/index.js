@@ -119,4 +119,20 @@ for (const places of arrayOfPlaces.sort().reverse())
     console.log(places);
 for (const places of arrayOfPlaces)
     console.log(places);
-// 19=>
+// 19=>Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+console.log(`The numbers of guests = ${arrayOfNames.length}`);
+// 20=>Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+const arrayOfCities = ["karachi", "Lahore", "Faisalabad", "Sailkot"];
+for (const city of arrayOfCities)
+    console.log(city);
+// 21=>They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+let myProfile = {
+    name: "M.Zafeer",
+    dob: 21,
+    city: "FSD"
+};
+console.log(myProfile);
+// 22=>Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+const city = arrayOfCities[6]; //accsessing the element not exists
+const city1 = arrayOfCities[2]; //accsessing the element exists
+// 23=>Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
