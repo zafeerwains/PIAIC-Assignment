@@ -194,4 +194,67 @@ if (age < 2) {
     console.log("The person is an elder.");
 }
 
-29=>
+// 29=>Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+const arrayOfFruits: string[] = ["banana", "apple", "strawberry"];
+if (arrayOfFruits.includes("banana")) console.log("You really like bananas!");
+if (arrayOfFruits.includes("apple")) console.log("You really like apples!");
+if (arrayOfFruits.includes("orange")) console.log("You really like oranges!");
+if (arrayOfFruits.includes("strawberry")) console.log("You really like strawberries!");
+if (arrayOfFruits.includes("grape")) console.log("You really like grapes!");
+
+// 30=>Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+const arrayOfAdmins: string[] = ["Admin", "Customer", "SuperAdmin", "Technition"]
+for (const addmin of arrayOfAdmins) {
+    if (addmin === "admin") console.log(`Hello admin, would you like to see a status report?`);
+    else console.log(`Hey ${addmin} thank you for logging in again`);
+}
+
+// 31=>No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+if (arrayOfAdmins.length > 0) console.log("We First Clean the array");
+while (arrayOfAdmins.length) arrayOfAdmins.pop()
+if (!arrayOfAdmins.length) console.log("We need to find some users!");
+
+//  32=>Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+const current_users: string[] = ["ali", 'Ahmad', 'akmal', 'akbar', 'abid'];
+const new_users: string[] = ["hamza", 'ahmad', 'akmal', 'Mehmood', 'Abid'];
+
+for (const nameOfCurrent of current_users) {
+    let foundInBothArrays = false;
+    for (const nameOfNew of new_users) {
+        if (nameOfCurrent === nameOfNew) {
+            foundInBothArrays = true;
+            break;
+        }
+    }
+    if (foundInBothArrays) console.log(nameOfCurrent, "found in both arrays");
+    else console.log(nameOfCurrent, "not found in both arrays")
+}
+
+// 33=>Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// Store the numbers 1 through 9 in an array
+const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (const number of arrayOfNumbers) {
+    let ordinalEnding;
+    if (number === 1) {
+        ordinalEnding = "st";
+    } else if (number === 2) {
+        ordinalEnding = "nd";
+    } else if (number === 3) {
+        ordinalEnding = "rd";
+    } else {
+        ordinalEnding = "th";
+    }
+    console.log(`${number}${ordinalEnding}`);
+}
+
+// 34=>Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+const arrayOfFavoritePizzas: string[] = ["Pepperoni", "Special", "Maliboti", "fagita"];
+console.log("My favorite pizzas:");
+for (const pizza of arrayOfFavoritePizzas) console.log(`I like ${pizza} pizza.`);
+console.log("I really love pizza!");
+
+// 35=>Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+const arrayOfAnimals:string[] = ["Dog", "Cat", "Rabbit"];
+console.log("List of Animals:");
+for (const animal of arrayOfAnimals) console.log(`A ${animal.toLowerCase()} would make a great pet.`)
+console.log("Any of these animals would make a great pet!");
