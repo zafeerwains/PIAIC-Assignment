@@ -269,13 +269,43 @@ make_shirt("medium")
 make_shirt("samll", "The other messege")
 
 // 38=>Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
-const describe_city = (city: string="Faisalabad", country: string="Pakistan") => console.log(`${city} is in ${country = "Pakistan"}`)
+const describe_city = (city: string = "Faisalabad", country: string = "Pakistan") => console.log(`${city} is in ${country = "Pakistan"}`)
 describe_city("Karachi")
 describe_city("Lahore")
 describe_city("Faisalabad")
 
 // 39=>City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
-const city_country=(city:string,country:string)=>console.log(`${city},${country}`);
-city_country("Lahore","Pakistan")
-city_country("Paris","France")
-city_country("London","England")
+const city_country = (city: string, country: string) => console.log(`${city},${country}`);
+city_country("Lahore", "Pakistan")
+city_country("Paris", "France")
+city_country("London", "England")
+
+// 40=>Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+interface album {
+    artist: string;
+    title: string
+    track?: number
+}
+const make_album = (album: album) => {
+    return album;
+}
+console.log(make_album({ artist: 'Atif', title: 'AntThig' }));
+console.log(make_album({ artist: 'John', title: 'Bash' }));
+console.log(make_album({ artist: 'Akbar', title: 'Script', track: 34 }));
+
+// 41=>Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+const arrayOfMagiciains: string[] = ["Ali", "Akbar", "Babar", "Rizwan"]
+const show_magicians = (magicians: string[]) => {
+    for (const magician of magicians) console.log(magician);
+}
+show_magicians(arrayOfMagiciains)
+
+// 42=>Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+const make_great = (magicians: string[]) => {
+    let modified_magicians: String[]=[]
+    for (const magician of magicians) {
+        modified_magicians.push(`${magician}, The great Magician`)
+    }
+    return modified_magicians
+}
+console.log(make_great(arrayOfMagiciains));

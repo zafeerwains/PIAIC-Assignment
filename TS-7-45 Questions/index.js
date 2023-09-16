@@ -306,3 +306,25 @@ const city_country = (city, country) => console.log(`${city},${country}`);
 city_country("Lahore", "Pakistan");
 city_country("Paris", "France");
 city_country("London", "England");
+const make_album = (album) => {
+    return album;
+};
+console.log(make_album({ artist: 'Atif', title: 'AntThig' }));
+console.log(make_album({ artist: 'John', title: 'Bash' }));
+console.log(make_album({ artist: 'Akbar', title: 'Script', track: 34 }));
+// 41=>Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+const arrayOfMagiciains = ["Ali", "Akbar", "Babar", "Rizwan"];
+const show_magicians = (magicians) => {
+    for (const magician of magicians)
+        console.log(magician);
+};
+show_magicians(arrayOfMagiciains);
+// 42=>Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+const make_great = (magicians) => {
+    let modified_magicians = [];
+    for (const magician of magicians) {
+        modified_magicians.push(`${magician}, The great Magician`);
+    }
+    return modified_magicians;
+};
+console.log(make_great(arrayOfMagiciains));
