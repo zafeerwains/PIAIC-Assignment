@@ -254,7 +254,28 @@ for (const pizza of arrayOfFavoritePizzas) console.log(`I like ${pizza} pizza.`)
 console.log("I really love pizza!");
 
 // 35=>Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
-const arrayOfAnimals:string[] = ["Dog", "Cat", "Rabbit"];
+const arrayOfAnimals: string[] = ["Dog", "Cat", "Rabbit"];
 console.log("List of Animals:");
 for (const animal of arrayOfAnimals) console.log(`A ${animal.toLowerCase()} would make a great pet.`)
 console.log("Any of these animals would make a great pet!");
+
+// 36=>T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+const make_shirt = (size: string = "Large", message: string = 'I love TypeScript') => console.log(`We are making "${size}" size shirts with the  message "${message}"`)
+make_shirt("large", "16 September 2023 the date of print");
+
+// 37=>Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+make_shirt("large")
+make_shirt("medium")
+make_shirt("samll", "The other messege")
+
+// 38=>Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+const describe_city = (city: string="Faisalabad", country: string="Pakistan") => console.log(`${city} is in ${country = "Pakistan"}`)
+describe_city("Karachi")
+describe_city("Lahore")
+describe_city("Faisalabad")
+
+// 39=>City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+const city_country=(city:string,country:string)=>console.log(`${city},${country}`);
+city_country("Lahore","Pakistan")
+city_country("Paris","France")
+city_country("London","England")
