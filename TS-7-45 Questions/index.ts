@@ -148,3 +148,50 @@ if (arrayOfCities[3] === "Sailkot") console.log(true);
 if (arrayOfCities[1] === "Lahore") console.log(true);
 
 // 24=>More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following
+//done in upper question
+
+// 25=>Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+var alien_color: string = "green"
+if (alien_color === "green") console.log("the player just earned 5 points.");
+if (alien_color === "red") { }
+
+// 26=>Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+if (alien_color === "green") console.log("the player just earned 5 points for shooting the alien")
+else console.log("the player just earned 10 points");
+//version 2
+alien_color = "red"
+if (alien_color === "green") console.log("the player just earned 5 points for shooting the alien")
+else console.log("the player just earned 10 points");
+
+// 27=>Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+if (alien_color === "green") console.log("the player just earned 5 points for shooting the alien")
+else if (alien_color === "yellow") console.log("the player just earned 10 points for shooting the alien");
+else if (alien_color === "red") console.log("the player just earned 15 points for shooting the alien");
+//version 2
+alien_color = "yellow"
+if (alien_color === "green") console.log("the player just earned 5 points for shooting the alien")
+else if (alien_color === "yellow") console.log("the player just earned 10 points for shooting the alien");
+else if (alien_color === "red") console.log("the player just earned 15 points for shooting the alien");
+//version 3
+alien_color = "green"
+if (alien_color === "green") console.log("the player just earned 5 points for shooting the alien")
+else if (alien_color === "yellow") console.log("the player just earned 10 points for shooting the alien");
+else if (alien_color === "red") console.log("the player just earned 15 points for shooting the alien");
+
+// 28=>Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+const age = 21;
+if (age < 2) {
+    console.log("The person is a baby.");
+} else if (age >= 2 && age < 4) {
+    console.log("The person is a toddler.");
+} else if (age >= 4 && age < 13) {
+    console.log("The person is a kid.");
+} else if (age >= 13 && age < 20) {
+    console.log("The person is a teenager.");
+} else if (age >= 20 && age < 65) {
+    console.log("The person is an adult.");
+} else {
+    console.log("The person is an elder.");
+}
+
+29=>
