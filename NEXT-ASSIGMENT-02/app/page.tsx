@@ -186,7 +186,7 @@ export default function Home() {
             <i className="fab fa-twitter"></i>
             <i className="fab fa-linkedin"></i>
         </div>
-        <p>Made with <i className="fas fa-heart"></i> by <a href="/">Faheem Saif</a></p>
+        <p>Made with <i className="fas fa-heart"></i> by <a href="/">Zafeer Wains</a></p>
         <p>Copyright © 2021 <a href="index.html">Xplore Skill</a>. All Rights Reserved</p>
     </section>
   
