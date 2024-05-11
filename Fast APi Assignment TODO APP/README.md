@@ -74,6 +74,4 @@ This will start the server on `http://127.0.0.1:8080` by default.
 The API uses dependency injection to manage database connections. The `get_db` function provides a database session to each endpoint function, ensuring efficient database usage and proper resource management.
 
 
-## Author
-## DevMianHaroon
 
